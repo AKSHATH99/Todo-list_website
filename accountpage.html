@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account Information</title>
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            margin-left: 330px;
+            font-size: 32px;
+        }
+
+
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            background: url("https://https://getwallpapers.com/wallpaper/full/9/a/7/375257.jpg.wallpapersafari.com/46/81/215NeC.jpg");
+        }
+
+
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .user-profile {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 2rem;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        .user-details {
+            padding: 1rem;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        /* Style the header */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+
+        /* Style the user details */
+        label {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Style the footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+        }
+
+        img {
+            height: 140px;
+            width: 137px;
+            border-radius: 100px;
+        }
+
+        .info {
+            margin-left: 251px;
+        }
+
+        button {
+            height: 39px;
+            width: 119px;
+            background-color: #6e5555;
+            border-color: #6e5555;
+            color:white;
+
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section class="user-profile">
+            <h2>User Profile</h2>
+            <div class="user-details">
+                <img src="https://th.bing.com/th/id/OIP.IOGGKcmJMYKPkMuimQDLnwHaHv?pid=ImgDet&rs=1">
+                <br>
+                <div class="info">
+                    <label for="username">Username:</label>
+                    <p id="username"></p>
+                    <label for="email">Email:</label>
+                    <p id="email"></p>
+
+                    <button onclick="deleteaccount()">DELETE ACCOUNT</button>
+
+                    <button><a href="loginpage.html">CREATE ACC</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        let uname = document.getElementById("username")
+        let emailid = document.getElementById("email")
+
+        let usernamefromls = localStorage.getItem("username")
+        let emailfromls = localStorage.getItem("email")
+
+        uname.innerHTML = usernamefromls;
+        emailid.innerHTML = emailfromls;
+
+        function deleteaccount() {
+            localStorage.removeItem("username");
+            localStorage.removeItem("email");
+            uname.innerHTML = " ";
+            emailid.innerHTML = " ";
+
+        }
+    </script>
+</body>
+
+</html>

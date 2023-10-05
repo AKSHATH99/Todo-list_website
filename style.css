@@ -1,0 +1,198 @@
+header {
+    display: flex;
+}
+
+h3 {
+    font-size: 30px;
+    color: cadetblue;
+    font-family: cursive;
+
+}
+
+img {
+    width: 196px;
+    height: 234px;
+    margin-left: 150px;
+   
+}
+
+
+a {
+    margin-left: 645px;
+    border: 5px solid cadetblue;
+    color: cadetblue;
+    text-decoration: none;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 154px;
+    margin-top: 21px;
+}
+
+.img-intro {
+    display: flex;
+}
+
+
+.intro {
+    
+    width: 742px;
+    height: 246px;
+    
+    
+}
+
+p {
+    margin-left: 238px;
+    font-size: 22px;
+    font-family: cursive;
+    margin-top: 44px;
+}
+
+li {
+    margin-left: 238px;
+    font-size: 15px;
+    list-style: none;
+}
+
+
+
+.main {
+    display: flex;
+    margin-top: 67px;
+}
+
+.list-section {
+    border: 2px solid black;
+    width: 742px;
+}
+input[type="checkbox"] {
+    
+    margin-right: 5px;
+    background-color: yellow;
+  }
+
+
+.add {
+    border: 2px solid black;
+    margin-left: 4px;
+    height:154px;
+}
+#task-name{
+    width: 500px;
+    height:35px;
+}
+#new-task{
+    width: 500px;
+    height:35px;
+    margin-top: 5px;
+}
+#delete{
+    margin-left: 559px;
+    height: 29px;
+    width: 88px;
+    background-color: crimson;
+    color: white;
+    margin-top: -13px;
+}
+#delete:hover{
+    cursor: pointer;
+}
+
+.checkbox-img {
+    height: 31px;
+    width: 28px;
+    margin-left: 0px;
+    margin-bottom: -10px;
+}
+
+
+/* header {
+    display: flex;
+}
+
+h3 {
+    font-size: 30px;
+    color: cadetblue;
+    font-family: cursive;
+}
+
+img {
+    width: 196px;
+    height: 234px;
+    margin-left: 150px;
+}
+
+a {
+    margin-left: 800px;
+    border: 5px solid cadetblue;
+    color: cadetblue;
+    text-decoration: none;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 154px;
+    margin-top: 21px;
+}
+
+.img-intro {
+    display: flex;
+}
+
+.intro {
+    width: 742px;
+    height: 246px;
+}
+
+p {
+    margin-left: 238px;
+    font-size: 22px;
+    font-family: cursive;
+    margin-top: 44px;
+}
+
+li {
+    margin-left: 238px;
+    font-size: 15px;
+    list-style: none;
+}
+
+.main {
+    display: flex;
+    margin-top: 67px;
+}
+
+.list-section {
+    border: 2px solid black;
+    width: 742px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    background-color: yellow;
+}
+
+.add {
+    border: 2px solid black;
+    margin-left: 4px;
+}
+
+#task-name {
+    width: 500px;
+    height: 35px;
+}
+
+#new-task {
+    width: 500px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+.checkbox-img {
+    height: 31px;
+    width: 28px;
+    margin-left: 0px;
+    margin-bottom: -10px;
+} */
