@@ -8,11 +8,14 @@
 
 
 </head>
+
 <body>
+    <div class="for-bg">
     <header>
         <h3>MY TODO LIST </h3>
-        <a href="loginpage.html">LOGIN</a>  
-        <a href="accountpage.html" style="margin-left: 24px;">MY ACCOUNT</a>  
+        <button id="mode">RATE US</button>
+         <a href="loginpage.html">LOGIN</a>
+        <a href="accountpage.html" style="margin-left: 24px;">MY ACCOUNT</a>
     </header>
     <div class="img-intro">
         <div class="intro">
@@ -20,38 +23,141 @@
 
             <ul>
                 <li> <img class="checkbox-img"
-                        src="https://th.bing.com/th/id/R.9c7cab75d07c2a6018add1c3d78eac53?rik=Gtx8kESRZ%2fRBug&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcheck-mark-with-transparent-background%2fcheck-mark-with-transparent-background-12.png&ehk=kYqlJLPIeXy%2bT0jQk2379AyIpSyfa9lvfZQXKZ7VSNM%3d&risl=&pid=ImgRaw&r=0"
+                        src="checkbox.png"
                         alt=""> Easily Look Through Your Tasks </li>
                 <li> <img class="checkbox-img"
-                        src="https://th.bing.com/th/id/R.9c7cab75d07c2a6018add1c3d78eac53?rik=Gtx8kESRZ%2fRBug&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcheck-mark-with-transparent-background%2fcheck-mark-with-transparent-background-12.png&ehk=kYqlJLPIeXy%2bT0jQk2379AyIpSyfa9lvfZQXKZ7VSNM%3d&risl=&pid=ImgRaw&r=0"
+                        src="checkbox.png"
                         alt=""> Add New Tasks</li>
                 <li> <img class="checkbox-img"
-                        src="https://th.bing.com/th/id/R.9c7cab75d07c2a6018add1c3d78eac53?rik=Gtx8kESRZ%2fRBug&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcheck-mark-with-transparent-background%2fcheck-mark-with-transparent-background-12.png&ehk=kYqlJLPIeXy%2bT0jQk2379AyIpSyfa9lvfZQXKZ7VSNM%3d&risl=&pid=ImgRaw&r=0"
-                        alt=""> Don't Forget To Tick The Checkbox When You Are Done With A
+                        src="checkbox.png"
+                        alt=""> Don't Forget To Tick The Checkbox When  You Are <br>Done With A
                     Task </li>
+                <li id="li-1">Add Your TO-DOs 👇 </li>
             </ul>
         </div>
-        <img src="https://th.bing.com/th/id/R.effd9dfb19c8accc89f54ffb512b4ba8?rik=%2bdLjXCABG9CQ2g&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_546505.png&ehk=UBy4FXMHpkAGxRi68TqZyERU7QvR5IyH%2bXdAY%2bIniAY%3d&risl=&pid=ImgRaw&r=0"
-            alt="todolist img">
+        <!-- <img src="todo.png"
+            alt="todolist img"> -->
 
     </div>
+</div>
     <div class="main">
+        
+        <div class="add">
+            <div class="add-heading">ADD NEW TASK</div>
+            <br>
+            
+            <input type="text" name="task-name" id="task-name"
+                placeholder="Enter the name or a id for your task (like task1, task2...)" required><br>
+            <input type="text" name="new-task" id="new-task" placeholder="Enter the new task" required><br>
+            <div class="timeanddate">
+                
+                    <h5>SET DATE</h5>
+                    <select name="date" id="date">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select name="month" id="month">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                
+                
+                    <h6 id="time"> SET TIME</h6>
+                    <select name="hour" id="hour">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    
+                    <select name="min" id="min">
+                        <option value="12">00</option>
+                        <option value="01">05</option>
+                        <option value="02">10</option>
+                        <option value="03">15</option>
+                        <option value="04">20</option>
+                        <option value="05">25</option>
+                        <option value="06">30</option>
+                        <option value="07">35</option>
+                        <option value="08">40</option>
+                        <option value="09">45</option>
+                        <option value="10">50</option>
+                        <option value="11">55</option>
+                        
+                    </select>
+                    <select name="am-pm" id="am-pm">
+                        <option value="am">am</option>
+                        <option value="pm">pm</option>
+                    </select>
+                
+
+            </div>
+            <button id="submit">ADD TASK</button>
+        
+        </div>
         <div class="list-section" id="list-section">
             <div class="list-heading">MY TODO'S</div>
             <hr>
 
         </div>
-        <div class="add">
-            <div class="add-heading">ADD NEW TASK</div>
-            <br>
-            <input type="text" name="task-name" id="task-name"
-                placeholder="Enter the name or a id for your task (like task1, task2...)"><br>
-            <input type="text" name="new-task" id="new-task" placeholder="Enter the new task"><br>
-            <button id="submit">ADD TASK</button>
-        </div>
+    </div>
+    <div class="footer">
+        <b>MADE WITH ❤ </b>
+        <b>&copy; AKSHATH P </b>
+        <b>CONNECT WITH ME :</b>
+        <a href="https://twitter.com/AkshathP2">TWITTER</a>
+        <a href="mailto:akshathpkk@gmail.com">MAIL</a>
+        <a href="https://github.com/AKSHATH99">VISIT MY GIT</a>
+
     </div>
     <script src="logic.js"></script>
 </body>
 
 </html>
-

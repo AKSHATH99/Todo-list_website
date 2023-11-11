@@ -1,5 +1,15 @@
+.for-bg {
+    background-image: url("1489354.jpg");
+    /* filter: blur(1px); */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 header {
     display: flex;
+    background-color: black;
+    height: 79px;
 }
 
 h3 {
@@ -13,13 +23,21 @@ img {
     width: 196px;
     height: 234px;
     margin-left: 150px;
-   
+
+}
+
+#mode {
+    width: 121px;
+    height: 50px;
+    margin-left: 599px;
+    margin-top: 23px;
+
 }
 
 
-a {
-    margin-left: 645px;
-    border: 5px solid cadetblue;
+header a {
+    margin-left: 22px;
+    border: 5px solid black;
     color: cadetblue;
     text-decoration: none;
     height: 42px;
@@ -28,6 +46,13 @@ a {
     justify-content: center;
     width: 154px;
     margin-top: 21px;
+    color: white;
+    background-color: black;
+}
+
+header a:hover {
+    color: black;
+    background-color: white;
 }
 
 .img-intro {
@@ -36,67 +61,120 @@ a {
 
 
 .intro {
-    
+
     width: 742px;
-    height: 246px;
-    
-    
+    height: 542px;
+
+
 }
 
 p {
     margin-left: 238px;
-    font-size: 22px;
+    font-size: 28;
     font-family: cursive;
     margin-top: 44px;
+    color: wheat;
 }
 
 li {
-    margin-left: 238px;
-    font-size: 15px;
+    margin-left: -22px;
+    font-size: 18px;
     list-style: none;
+    color: white;
+}
+
+#li-1 {
+    border: 2px solid #174a17;
+    background-color: #174a17;
+    display: inline-block;
+    /* border-radius: 10px; */
+    margin-top: 14px;
 }
 
 
 
 .main {
     display: flex;
-    margin-top: 67px;
+    margin-top: 0px;
+    background-color: #281f1f;
+    height: 600px;
+    background-image: url(bg3.jpg);
 }
 
 .list-section {
-    border: 2px solid black;
-    width: 742px;
+    border: 12px solid #05051a;
+    width: 575px;
+    margin-left: 150px;
+    color: white;
+    background-color: #05051a;
+    /* height: 200px; */
+    margin-top: 46px;
+    border-radius:31px ;
 }
+
+.list-heading {
+    margin-left: 200px;
+    font-size: 25px;
+}
+
+.add-heading {
+    margin-left: 101px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
 input[type="checkbox"] {
-    
+
     margin-right: 5px;
     background-color: yellow;
-  }
+}
 
 
 .add {
-    border: 2px solid black;
-    margin-left: 4px;
-    height:154px;
-}
-#task-name{
-    width: 500px;
-    height:35px;
-}
-#new-task{
-    width: 500px;
-    height:35px;
-    margin-top: 5px;
-}
-#delete{
-    margin-left: 559px;
-    height: 29px;
-    width: 88px;
-    background-color: crimson;
+    border: 5px solid #05051a;
+    margin-left: 37px;
+    height: 212px;
+    margin-top: 53px;
+    /* background-color: antiquewhite; */
     color: white;
-    margin-top: -13px;
+    background-color: #05051a;
+    border-radius: 25px;
 }
-#delete:hover{
+
+#task-name {
+    width: 359px;
+    height: 39px;
+    margin-left: 36px;
+}
+
+#new-task {
+    width: 450px;
+    height: 35px;
+    margin-top: 5px;
+    margin-left: 36px;
+}
+
+#end-date {
+    border: 2px solid red;
+    width: 115px;
+    height: 22px;
+    margin-top: -20px;
+    margin-left: 336px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#delete {
+    margin-left: 518px;
+    height: 25px;
+    width: 31px;
+    /* background-color: crimson; */
+    color: white;
+    margin-top: -23px;
+}
+
+#delete:hover {
     cursor: pointer;
 }
 
@@ -107,92 +185,60 @@ input[type="checkbox"] {
     margin-bottom: -10px;
 }
 
-
-/* header {
+.timeanddate {
     display: flex;
 }
 
-h3 {
-    font-size: 30px;
-    color: cadetblue;
-    font-family: cursive;
-}
-
-img {
-    width: 196px;
-    height: 234px;
-    margin-left: 150px;
-}
-
-a {
-    margin-left: 800px;
-    border: 5px solid cadetblue;
-    color: cadetblue;
-    text-decoration: none;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 154px;
-    margin-top: 21px;
-}
-
-.img-intro {
-    display: flex;
-}
-
-.intro {
-    width: 742px;
-    height: 246px;
-}
-
-p {
-    margin-left: 238px;
-    font-size: 22px;
-    font-family: cursive;
-    margin-top: 44px;
-}
-
-li {
-    margin-left: 238px;
-    font-size: 15px;
-    list-style: none;
-}
-
-.main {
-    display: flex;
-    margin-top: 67px;
-}
-
-.list-section {
-    border: 2px solid black;
-    width: 742px;
-}
-
-input[type="checkbox"] {
-    margin-right: 5px;
-    background-color: yellow;
-}
-
-.add {
-    border: 2px solid black;
-    margin-left: 4px;
-}
-
-#task-name {
-    width: 500px;
-    height: 35px;
-}
-
-#new-task {
-    width: 500px;
-    height: 35px;
-    margin-top: 5px;
-}
-
-.checkbox-img {
+select {
     height: 31px;
-    width: 28px;
-    margin-left: 0px;
-    margin-bottom: -10px;
-} */
+    width: 66px;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+option {
+    width: 20px;
+}
+
+#time {
+    margin-left: 10px;
+}
+
+#submit {
+    margin-left: 106px;
+    height: 29px;
+    width: 200px;
+    border-color: green;
+    color: white;
+    background-color: green;
+}
+
+.footer {
+    background-color: darkslategray;
+    height: 30px;
+    /* margin-top: 50px; */
+    margin-bottom: 0px;
+}
+
+b {
+    margin-left: 30px;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    margin-left: 23px;
+    text-decoration: none;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    /* ... (other responsive styles) ... */
+
+    .main {
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        /* Center items in the column */
+    }
+}

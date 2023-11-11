@@ -102,6 +102,7 @@
             background-color: #6e5555;
             border-color: #6e5555;
             color:white;
+            margin: 7px;
 
         }
         a{
@@ -128,6 +129,7 @@
                     <button onclick="deleteaccount()">DELETE ACCOUNT</button>
 
                     <button><a href="loginpage.html">CREATE ACC</a></button>
+                    <button><a href="todo list.html">BACK HOME</a></button>
                 </div>
             </div>
         </section>
@@ -143,8 +145,7 @@
         emailid.innerHTML = emailfromls;
 
         function deleteaccount() {
-            localStorage.removeItem("username");
-            localStorage.removeItem("email");
+            localStorage.clear();
             uname.innerHTML = " ";
             emailid.innerHTML = " ";
 
