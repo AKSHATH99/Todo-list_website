@@ -155,7 +155,9 @@ input[type="checkbox"] {
 }
 
 #end-date {
-    border: 2px solid red;
+    border: 2px solid #772f2f;
+    background-color: #772f2f;
+    color: white;
     width: 115px;
     height: 22px;
     margin-top: -20px;
