@@ -6,7 +6,7 @@ let date = document.getElementById('date');
 let month = document.getElementById('month');
 let hour = document.getElementById('hour')
 let min = document.getElementById('min')
-let am_pm=document.getElementById('am-pm');
+let am_pm = document.getElementById('am-pm');
 
 function toggleStrikeThrough(index) {
   const label = document.querySelector(`[for="button-${index}"]`);
@@ -35,10 +35,10 @@ function displayAllLocalStorageContent() {
     }
 
     var value = localStorage.getItem(key);
-    var parsedvalue=JSON.parse(value);
-    content += `<div><input type="checkbox" value="completed" id="button-${i}" onclick="toggleStrikeThrough(${i})">
+    var parsedvalue = JSON.parse(value);
+    content += `<div id="list"><input type="checkbox" value="completed" id="button-${i}" onclick="toggleStrikeThrough(${i})">
         ${key} | ${parsedvalue.task} <div id="end-date"> ${parsedvalue.hour}:${parsedvalue.min}${parsedvalue.am_pm} , ${parsedvalue.date}/${parsedvalue.month}</div>
-    </div><img  id="delete"src="dlt-icon.jpg" onclick="deleteTask('${key}')"><hr>`;
+        <img  id="delete"src="dlt-icon.jpg" onclick="deleteTask('${key}')"></div><hr>`;
   }
 
   newlist.innerHTML = content;
@@ -58,18 +58,18 @@ function takevalue() {
   console.log(taskid, newtask, hour.value, min.value, month.value, date.value)
 
   var timedate = {
-    task:newtask,
+    task: newtask,
     hour: hour.value,
     min: min.value,
     date: date.value,
     month: month.value,
-    am_pm:am_pm.value,
+    am_pm: am_pm.value,
 
   };
 
 
   localStorage.setItem(taskid, JSON.stringify(timedate))
-  newlist.innerHTML += `<input type="checkbox" value="clicked" id="button" >${taskid} | ${newtask} <div id="end-date"> ${hour.value}:${min.value}${am_pm.value} , ${date.value}/${month.value} </div><img src="dlt-icon.jpg" id="delete" onclick="deleteTask('${taskid}')"><hr>`;
+  newlist.innerHTML += `<div id="list"><input type="checkbox" value="clicked" id="button" >${taskid} | ${newtask} <div id="end-date"> ${hour.value}:${min.value}${am_pm.value} , ${date.value}/${month.value} </div><img src="dlt-icon.jpg" id="delete" onclick="deleteTask('${taskid}')"></div><hr>`;
   listsec.append(newlist)
   input.value = " ";
   taskname.value = " ";
