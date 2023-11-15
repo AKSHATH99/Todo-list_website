@@ -1,5 +1,6 @@
 .for-bg {
     background-image: url("1489354.jpg");
+    /* background: #222; */
     /* filter: blur(1px); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,14 +100,16 @@ li {
     background-color: #281f1f;
     height: 600px;
     background-image: url(bg3.jpg);
+    background: #222;
 }
 
 .list-section {
-    border: 12px solid #05051a;
+    /* border: 12px solid #05051a; */
     width: 575px;
     margin-left: 150px;
     color: white;
     background-color: #05051a;
+    background:  linear-gradient(228deg , #000000 , #322d51);
     /* height: 200px; */
     margin-top: 46px;
     border-radius:31px ;
@@ -131,13 +134,14 @@ input[type="checkbox"] {
 
 
 .add {
-    border: 5px solid #05051a;
+    /* border: 5px solid #05051a; */
     margin-left: 37px;
     height: 212px;
     margin-top: 53px;
     /* background-color: antiquewhite; */
     color: white;
     background-color: #05051a;
+    background:  linear-gradient(228deg , #000000 , #322d51);
     border-radius: 25px;
 }
 
